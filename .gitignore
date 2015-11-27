@@ -1,0 +1,24 @@
+ShaderCache
+Temp/
+Obj/
+UnityGenerated/
+
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+/*.suo
+[Ee]xported[Oo]bj/
+.vs/
+/*.userprefs
+/*.pidb
+/*.suo
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store*
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+[Tt]humbs.db
