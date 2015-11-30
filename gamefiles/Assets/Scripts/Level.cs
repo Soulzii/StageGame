@@ -22,9 +22,9 @@ public class Level {
         pogingen = new List<Poging>();
     }
     
-    public void AddPoging(float msAtEnd, float vKStart, float dKStart, float mStart, float score, string Reason)
+    public void AddPoging(float msAtEnd, float vKStart, float dKStart, float mStart, float score, string Reason, int pNr)
     {
-        pogingen.Add(new Poging(msAtEnd, vKStart, dKStart, mStart, score, Reason));
+        pogingen.Add(new Poging(msAtEnd, vKStart, dKStart, mStart, score, Reason, pNr));
     }
 	
 }

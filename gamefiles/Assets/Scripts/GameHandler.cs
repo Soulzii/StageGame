@@ -142,11 +142,14 @@ public class GameHandler : MonoBehaviour
             }
             if (!hasLevel)
                 levels.Add(new Level(Application.loadedLevel - 1));
+
+
             foreach (Level l in levels)
             {
-                if(l.lastLevel == Application.loadedLevel)
+                if(l.lastLevel == Application.loadedLevel - 1)
                 {
-                    l.AddPoging(msEind, vKStart, dKStart, Mass, Score, reason);
+                    l.AddPoging(msEind, vKStart, dKStart, Mass, Score, reason, l.pogingen.Count + 1);
+
                 }
             }
             Debug.Log(Path.Combine(Application.persistentDataPath, "gamedata.xml"));
@@ -160,9 +163,9 @@ public class GameHandler : MonoBehaviour
             levels.Add(new Level(Application.loadedLevel - 1));
             foreach (Level l in levels)
             {
-                if (l.lastLevel == Application.loadedLevel)
+                if (l.lastLevel == Application.loadedLevel - 1)
                 {
-                    l.AddPoging(msEind, vKStart, dKStart, Mass, Score, reason);
+                    l.AddPoging(msEind, vKStart, dKStart, Mass, Score, reason, 1);
                 }
             }
             Debug.Log(Path.Combine(Application.persistentDataPath, "gamedata.xml"));
